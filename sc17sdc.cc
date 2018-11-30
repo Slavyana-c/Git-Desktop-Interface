@@ -1,4 +1,5 @@
 #include "globals.h"
+#include "gitpp.h"
 
 #include <QLabel>
 #include <QHBoxLayout>
