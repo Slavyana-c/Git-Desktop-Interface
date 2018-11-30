@@ -5,6 +5,7 @@
 TEMPLATE = app
 TARGET = 2811_cw3
 INCLUDEPATH += .
+QT += widgets
 
 # Input
 HEADERS += dispatch.h gitpp.h globals.h tabs.h trace.h window.h

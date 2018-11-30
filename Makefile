@@ -573,7 +573,7 @@ moc_tabs.cpp: /home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qvector2d.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qtouchdevice.h \
 		tabs.h
-	/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/bin/moc $(DEFINES) -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/mkspecs/linux-g++ -I'/home/cserv1_a/soc_ug/sc17sdc/Year2/User Interfaces/ui_coursework_3/2811_cw3' -I'/home/cserv1_a/soc_ug/sc17sdc/Year2/User Interfaces/ui_coursework_3/2811_cw3' -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore tabs.h -o moc_tabs.cpp
+	/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/bin/moc $(DEFINES) -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/mkspecs/linux-g++ -I'/home/cserv1_a/soc_ug/sc17xc/Desktop/year 2/user interface/coursework3_gitlab' -I'/home/cserv1_a/soc_ug/sc17xc/Desktop/year 2/user interface/coursework3_gitlab' -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore tabs.h -o moc_tabs.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
@@ -1160,123 +1160,7 @@ el17oa.o: el17oa.cc globals.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qframe.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o el17oa.o el17oa.cc
 
-sc17sdc.o: sc17sdc.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sc17sdc.o sc17sdc.cc
-
-sc17xc.o: sc17xc.cc globals.h \
-		dispatch.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QWidget \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qwidget.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qwindowdefs.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qglobal.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qconfig.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qfeatures.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qsystemdetection.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qprocessordetection.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qcompilerdetection.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qtypeinfo.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qtypetraits.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qsysinfo.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qlogging.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qflags.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qbasicatomic.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_bootstrap.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qgenericatomic.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_msvc.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_armv7.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_armv6.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_armv5.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_ia64.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_mips.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_x86.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_cxx11.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_gcc.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_unix.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qglobalstatic.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qmutex.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qnumeric.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qobjectdefs.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qnamespace.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qwindowdefs_win.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qobject.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qstring.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qchar.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qbytearray.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qrefcount.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qarraydata.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qstringbuilder.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qlist.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qalgorithms.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qiterator.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qcoreevent.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qscopedpointer.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qmetatype.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qvarlengtharray.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qcontainerfwd.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qisenum.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qobject_impl.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qmargins.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qpaintdevice.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qrect.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qsize.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qpoint.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qpalette.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qcolor.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qrgb.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qstringlist.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qdatastream.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qiodevice.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qpair.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qregexp.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qstringmatcher.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qbrush.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qvector.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qmatrix.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qpolygon.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qregion.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qline.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qtransform.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qpainterpath.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qimage.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qpixmap.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qsharedpointer.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qshareddata.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qsharedpointer_impl.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qhash.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qfont.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qfontmetrics.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qfontinfo.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qcursor.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qkeysequence.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qevent.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qvariant.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qmap.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qdebug.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qtextstream.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qlocale.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qset.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qcontiguouscache.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qurl.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qurlquery.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qfile.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qfiledevice.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qvector2d.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qtouchdevice.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QLabel \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlabel.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qframe.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sc17xc.o sc17xc.cc
-
-el17dtt.o: el17dtt.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o el17dtt.o el17dtt.cc
-
-el17flc.o: el17flc.cc 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o el17flc.o el17flc.cc
-
-scsfsa.o: scsfsa.cc globals.h \
+sc17sdc.o: sc17sdc.cc globals.h \
 		dispatch.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QWidget \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qwidget.h \
@@ -1386,6 +1270,351 @@ scsfsa.o: scsfsa.cc globals.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlayout.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlayoutitem.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qgridlayout.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sc17sdc.o sc17sdc.cc
+
+sc17xc.o: sc17xc.cc globals.h \
+		dispatch.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QWidget \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qwidget.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qwindowdefs.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qglobal.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qconfig.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qfeatures.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qsystemdetection.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qprocessordetection.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qcompilerdetection.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qtypeinfo.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qtypetraits.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qsysinfo.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qlogging.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qflags.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qbasicatomic.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qgenericatomic.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_msvc.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_armv7.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_armv6.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_armv5.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_ia64.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_mips.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_x86.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_cxx11.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_gcc.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_unix.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qglobalstatic.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qmutex.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qnumeric.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qobjectdefs.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qnamespace.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qwindowdefs_win.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qobject.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qstring.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qchar.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qbytearray.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qrefcount.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qarraydata.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qstringbuilder.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qlist.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qalgorithms.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qiterator.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qcoreevent.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qscopedpointer.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qmetatype.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qvarlengtharray.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qcontainerfwd.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qisenum.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qobject_impl.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qmargins.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qpaintdevice.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qrect.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qsize.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qpoint.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qpalette.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qcolor.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qrgb.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qstringlist.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qdatastream.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qiodevice.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qpair.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qregexp.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qstringmatcher.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qbrush.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qvector.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qmatrix.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qpolygon.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qregion.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qline.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qtransform.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qpainterpath.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qimage.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qpixmap.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qsharedpointer.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qshareddata.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qhash.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qfont.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qfontmetrics.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qfontinfo.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qcursor.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qkeysequence.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qevent.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qvariant.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qmap.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qdebug.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qtextstream.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qlocale.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qset.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qcontiguouscache.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qurl.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qurlquery.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qfile.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qfiledevice.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qvector2d.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qtouchdevice.h \
+		gitpp.h \
+		trace.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QLabel \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlabel.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qframe.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QHBoxLayout \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qboxlayout.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlayout.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qgridlayout.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QCheckBox \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qcheckbox.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qicon.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sc17xc.o sc17xc.cc
+
+el17dtt.o: el17dtt.cc globals.h \
+		dispatch.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QWidget \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qwidget.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qwindowdefs.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qglobal.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qconfig.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qfeatures.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qsystemdetection.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qprocessordetection.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qcompilerdetection.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qtypeinfo.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qtypetraits.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qsysinfo.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qlogging.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qflags.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qbasicatomic.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qgenericatomic.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_msvc.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_armv7.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_armv6.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_armv5.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_ia64.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_mips.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_x86.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_cxx11.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_gcc.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_unix.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qglobalstatic.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qmutex.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qnumeric.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qobjectdefs.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qnamespace.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qwindowdefs_win.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qobject.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qstring.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qchar.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qbytearray.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qrefcount.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qarraydata.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qstringbuilder.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qlist.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qalgorithms.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qiterator.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qcoreevent.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qscopedpointer.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qmetatype.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qvarlengtharray.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qcontainerfwd.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qisenum.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qobject_impl.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qmargins.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qpaintdevice.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qrect.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qsize.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qpoint.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qpalette.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qcolor.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qrgb.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qstringlist.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qdatastream.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qiodevice.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qpair.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qregexp.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qstringmatcher.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qbrush.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qvector.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qmatrix.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qpolygon.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qregion.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qline.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qtransform.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qpainterpath.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qimage.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qpixmap.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qsharedpointer.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qshareddata.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qhash.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qfont.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qfontmetrics.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qfontinfo.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qcursor.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qkeysequence.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qevent.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qvariant.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qmap.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qdebug.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qtextstream.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qlocale.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qset.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qcontiguouscache.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qurl.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qurlquery.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qfile.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qfiledevice.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qvector2d.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qtouchdevice.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QLabel \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlabel.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qframe.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QHBoxLayout \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qboxlayout.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlayout.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qgridlayout.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o el17dtt.o el17dtt.cc
+
+el17flc.o: el17flc.cc globals.h \
+		dispatch.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QWidget \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qwidget.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qwindowdefs.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qglobal.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qconfig.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qfeatures.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qsystemdetection.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qprocessordetection.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qcompilerdetection.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qtypeinfo.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qtypetraits.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qsysinfo.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qlogging.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qflags.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qbasicatomic.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qgenericatomic.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_msvc.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_armv7.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_armv6.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_armv5.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_ia64.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_mips.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_x86.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_cxx11.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_gcc.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qatomic_unix.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qglobalstatic.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qmutex.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qnumeric.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qobjectdefs.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qnamespace.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qwindowdefs_win.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qobject.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qstring.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qchar.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qbytearray.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qrefcount.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qarraydata.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qstringbuilder.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qlist.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qalgorithms.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qiterator.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qcoreevent.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qscopedpointer.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qmetatype.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qvarlengtharray.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qcontainerfwd.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qisenum.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qobject_impl.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qmargins.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qpaintdevice.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qrect.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qsize.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qpoint.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qpalette.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qcolor.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qrgb.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qstringlist.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qdatastream.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qiodevice.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qpair.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qregexp.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qstringmatcher.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qbrush.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qvector.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qmatrix.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qpolygon.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qregion.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qline.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qtransform.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qpainterpath.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qimage.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qpixmap.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qsharedpointer.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qshareddata.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qhash.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qfont.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qfontmetrics.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qfontinfo.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qcursor.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qkeysequence.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qevent.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qvariant.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qmap.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qdebug.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qtextstream.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qlocale.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qset.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qcontiguouscache.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qurl.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qurlquery.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qfile.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qfiledevice.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qvector2d.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qtouchdevice.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QLabel \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlabel.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qframe.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QHBoxLayout \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qboxlayout.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlayout.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qgridlayout.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o el17flc.o el17flc.cc
+
+scsfsa.o: scsfsa.cc 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o scsfsa.o scsfsa.cc
 
 moc_tabs.o: moc_tabs.cpp 
