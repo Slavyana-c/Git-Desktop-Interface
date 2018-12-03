@@ -1155,9 +1155,29 @@ el17oa.o: el17oa.cc globals.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qfiledevice.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qvector2d.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qtouchdevice.h \
+		gitpp.h \
+		trace.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QLabel \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlabel.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qframe.h
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qframe.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QHBoxLayout \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qboxlayout.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlayout.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qgridlayout.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QFormLayout \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qformlayout.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QLayout \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/QDesktopServices \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qdesktopservices.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qstandardpaths.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/QUrl \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QLineEdit \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlineedit.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qtextcursor.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qtextformat.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qpen.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qtextoption.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o el17oa.o el17oa.cc
 
 sc17sdc.o: sc17sdc.cc globals.h \
@@ -1262,14 +1282,27 @@ sc17sdc.o: sc17sdc.cc globals.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qfiledevice.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qvector2d.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qtouchdevice.h \
+		gitpp.h \
+		trace.h \
+		window.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QMainWindow \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qmainwindow.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qtabwidget.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qicon.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QLabel \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlabel.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qframe.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/QString \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QHBoxLayout \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qboxlayout.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlayout.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qgridlayout.h
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qgridlayout.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QStatusBar \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qstatusbar.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QFormLayout \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qformlayout.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sc17sdc.o sc17sdc.cc
 
 sc17xc.o: sc17xc.cc globals.h \
@@ -1387,7 +1420,14 @@ sc17xc.o: sc17xc.cc globals.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QCheckBox \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qcheckbox.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qicon.h
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qicon.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/QString \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QStatusBar \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qstatusbar.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QFormLayout \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qformlayout.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QLayout \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QVBoxLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sc17xc.o sc17xc.cc
 
 el17dtt.o: el17dtt.cc globals.h \
