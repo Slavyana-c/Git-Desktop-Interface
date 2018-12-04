@@ -7,42 +7,58 @@
 #include <QHBoxLayout>
 #include <QStatusBar>
 #include <QFormLayout>
+#include <QStackedWidget>
+#include <QComboBox>
+#include <QPushButton>
+#include <QLineEdit>
 
+#include "myFormLayout.h"
 
 namespace{
 
 class HelloWorldLabel : public QWidget{
 public:
-	HelloWorldLabel() : QWidget(){
+	HelloWorldLabel() : QWidget() {
 
-		// QHBoxLayout* h=new QHBoxLayout;
-    QFormLayout *layout = new QFormLayout;
+    QFormLayout *formLayout = new MyLayout();
+		QPushButton *button1 = new QPushButton("Save");
+		QHBoxLayout *buttonLayout = new QHBoxLayout();
 
     GITPP::REPO r;
     for (auto i : r.config())
     {
-      //name->setText(QString::fromStdString(i.name()));
-      //h->addWidget(new QLabel(i.value()));
-    
       QString name = QString::fromStdString(i.name());
       QString value = QString::fromStdString(i.value());
-      layout->addRow(new QLabel(name), new QLabel(value));
+      formLayout->addRow(new QLabel(name), new QLineEdit(value));
     }
 
-		//h->setText("Config repository:");
-		//setLayout(h);
+		mainLayout->addLayout(formLayout);
 
-  //  layout->addRow(new QLabel(tr("Line 1:")), new QLabel(tr("Line 1:")));
-    setLayout(layout);
+		buttonLayout->addWidget(button1);
 
-		// QLabel *label = new QLabel(this);
-    // QHBoxLayout *layout = new QHBoxLayout();
-    // label->setText("Config repo");
-    //HelloWindow::statusBar()->showMessage("Program developed and owned by ...");
+		mainLayout->addLayout(buttonLayout);
+		QWidget* test = new QWidget();
+
+		//connect(button1, &QPushButton::clicked, this, &HelloWorldLabel::showEdit);
+		connect(button1, SIGNAL(clicked()), formLayout, SLOT(showEdit()));
+
+
+    setLayout(mainLayout);
 
 	}
-};
+
+QHBoxLayout *mainLayout = new QHBoxLayout();
+
+
+
+public slots:
+
+}; // end
+
+
+
 
 INSTALL_TAB(HelloWorldLabel, "Configure Repository");
+
 
 }
