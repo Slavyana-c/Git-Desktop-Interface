@@ -32,10 +32,11 @@ void HelloWindow::createWindowContent()
 	layout->addStretch();
 
 	// Put layout in the middle of the window
-
 	_mainWidget = new QWidget();
 
+	setMinimumHeight(650);
 	_mainWidget->setLayout(layout);
+
 	//_mainWidget->setStyleSheet("background-color: #00FF00");
 
 	setCentralWidget(_mainWidget);
@@ -44,7 +45,7 @@ void HelloWindow::createWindowContent()
 
 void HelloWindow::createMenuAndStatusBar()
 {
-	statusBar()->showMessage("Program developed and owned by Omar Alebiary");
+	//statusBar()->showMessage("Program developed and owned by Omar");
 
 	QMenu* fileMenu = menuBar()->addMenu("&File");
 

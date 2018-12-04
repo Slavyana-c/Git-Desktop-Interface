@@ -21,7 +21,5 @@ public:
 
 	}
 };
-
-INSTALL_TAB(HelloWorldLabel, "Stats");
-
+INSTALL_TAB(HelloWorldLabel, "Statistics");
 }
