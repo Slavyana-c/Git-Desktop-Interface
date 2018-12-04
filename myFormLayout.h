@@ -1,37 +1,53 @@
 #include <QFormLayout>
 #include <iostream>
+#include "gitpp.h"
+#include <QLineEdit>
+#include <QLayoutItem>
+
 class MyLayout : public QFormLayout {
 	Q_OBJECT
+
+
 public slots:
-void showEdit() {
+void saveEdit() {
 
-   //FormLayout *tempLayout = new FormLayout();
-   //*tempLayout = *mainLayout
-   std::cout << "/* message */" <<'\n';
-   // QFormLayout *formLayout = new QFormLayout();
-   // delete mainLayout;
-   // qDeleteAll(this->children());
-   //
-   // GITPP::REPO r;
-   //
-   // for (auto i : r.config())
-   // {
-   // 	QString name = QString::fromStdString(i.name());
-   // 	QString value = QString::fromStdString(i.value());
-     //formLayout->addRow(new QLabel(name), new QTextEdit(value));
-   //}
+    GITPP::REPO r;
 
-   // mainLayout->addLayout(formLayout);
-   // setLayout(mainLayout);
+    QList<QLineEdit *> allLineEdits = this->findChildren<QLineEdit *>();  //Return all LineEdit controls that have been created.
+    std::cout << "/* message */" << this->count() <<"\n";
 
-   // QPushButton *button1 = new QPushButton("Edit");
-   //
-   // QHBoxLayout *buttonLayout = new QHBoxLayout();
-   // buttonLayout->addWidget(button1);
-   //
-   //
-   // 		setLayout(buttonLayout);
 
+    for (int i = 0; i < this->count(); ++i)
+  {
+  QWidget *widget = this->itemAt(i)->widget();
+  if (widget != NULL)
+  {
+    std::string type = widget->metaObject()->className();
+
+    if(type == "QLineEdit")
+    {
+      QLineEdit *edited =  qobject_cast<QLineEdit *>(widget);
+
+      std::cout<<type<<"\n";
+      std::cout<< edited->text().toStdString()<<"\n";
+    }
+    //widget->setVisible(false);
+  }
+  else
+  {
+    // You may want to recurse, or perform different actions on layouts.
+    // See gridLayout->itemAt(i)->layout()
+  }
+}
+
+        if (allLineEdits.count() > 0){
+            for (int i =0; i < allLineEdits.count(); i++)
+            {
+                QString myValue = allLineEdits.at(i)->text();
+                std::string text = myValue.toUtf8().constData();
+                std::cout<< text;
+            }
+        }
  }
 
 };

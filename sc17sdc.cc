@@ -40,7 +40,7 @@ public:
 		QWidget* test = new QWidget();
 
 		//connect(button1, &QPushButton::clicked, this, &HelloWorldLabel::showEdit);
-		connect(button1, SIGNAL(clicked()), formLayout, SLOT(showEdit()));
+		connect(button1, SIGNAL(clicked()), formLayout, SLOT(saveEdit()));
 
 
     setLayout(mainLayout);
