@@ -7,6 +7,8 @@
 #include <QDesktopServices>
 #include <QUrl>
 #include <QLineEdit>
+#include <QGridLayout>
+#include <QPushButton>
 
 
 namespace{
@@ -16,12 +18,17 @@ class HelloWorldLabel : public QWidget{
 
 public:
 	HelloWorldLabel() : QWidget(){
-		//QHBoxLayout* h=new QHBoxLayout;
+		QHBoxLayout* h = new QHBoxLayout;
 		QLabel *label = new QLabel(this);
-    //QHBoxLayout *layout = new QHBoxLayout();
-		QFormLayout *layout1 = new QFormLayout;
-    // label->setText("<u><b>These are your commits:</b></u>");
-		//label->setText("\n");
+		QHBoxLayout *buttonLayout = new QHBoxLayout();
+
+		QFormLayout* layout1 = new QFormLayout;
+		QPushButton *searchButton = new QPushButton("Search Commits!!");
+
+		QFormLayout* search = new QFormLayout;
+
+
+
 
 		label->setText("<u>Your commits:</u>\n");
 		layout1->addRow(new QLabel(" "));
@@ -29,14 +36,18 @@ public:
 		layout1->addRow(new QLabel("Name\t\t\t\t\tComment"));
 		layout1->addRow(new QLabel("====\t\t\t\t\t======"));
 
-		
+
+    search->addRow(new QLabel(" "));
+		search->addRow(new QLineEdit("search..."));
+		search->addWidget(searchButton);
+
+
+    connect(searchButton, SIGNAL(clicked()), search, SLOT(showEdit()));
+
+
     GITPP::REPO r;
 		for (auto i : r.commits()){
 
-
-
-			// label->setText("<u>Your commits:</u>");
-			// layout1->addRow(new QLabel("Name\t\tCommment"));
 			layout1->addRow(new QLabel(" "));
 
 			QString name = QString::fromStdString(i.signature().name());
@@ -47,8 +58,9 @@ public:
 
 			//layout1->addRow(new QLabel(id1));
 		}
-
-		setLayout(layout1);
+		h->addLayout(layout1);
+		h->addLayout(search);
+		setLayout(h);
 
 	}
 };
