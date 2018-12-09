@@ -33,7 +33,7 @@ QT_MOC_LITERAL(0, 0, 8),
 QT_MOC_LITERAL(1, 9, 8),
 QT_MOC_LITERAL(2, 18, 0)
     },
-    "MyLayout\0showEdit\0"
+    "MyLayout\0saveEdit\0"
 };
 #undef QT_MOC_LITERAL
 
@@ -64,7 +64,7 @@ void MyLayout::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
     if (_c == QMetaObject::InvokeMetaMethod) {
         MyLayout *_t = static_cast<MyLayout *>(_o);
         switch (_id) {
-        case 0: _t->showEdit(); break;
+        case 0: _t->saveEdit(); break;
         default: ;
         }
     }

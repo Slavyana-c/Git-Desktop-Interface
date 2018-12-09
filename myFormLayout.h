@@ -1,37 +1,64 @@
 #include <QFormLayout>
 #include <iostream>
+#include "gitpp.h"
+#include <QLineEdit>
+#include <QLayoutItem>
+#include <QLabel>
+
 class MyLayout : public QFormLayout {
 	Q_OBJECT
-public slots:
-void showEdit() {
 
-   //FormLayout *tempLayout = new FormLayout();
-   //*tempLayout = *mainLayout
-   std::cout << "/* message */" <<'\n';
-   // QFormLayout *formLayout = new QFormLayout();
-   // delete mainLayout;
-   // qDeleteAll(this->children());
-   //
-   // GITPP::REPO r;
-   //
-   // for (auto i : r.config())
-   // {
-   // 	QString name = QString::fromStdString(i.name());
-   // 	QString value = QString::fromStdString(i.value());
-     //formLayout->addRow(new QLabel(name), new QTextEdit(value));
-   //}
 
-   // mainLayout->addLayout(formLayout);
-   // setLayout(mainLayout);
+	public slots:
+	void saveEdit() {
 
-   // QPushButton *button1 = new QPushButton("Edit");
-   //
-   // QHBoxLayout *buttonLayout = new QHBoxLayout();
-   // buttonLayout->addWidget(button1);
-   //
-   //
-   // 		setLayout(buttonLayout);
+		GITPP::REPO r;
+		std::string name = "";
+		std::string value = "";
+		//QList<QLineEdit *> allLineEdits = this->findChildren<QLineEdit *>();  //Return all LineEdit controls that have been created.
+		std::cout << "/* message */" << this->count() <<"\n";
 
- }
+
+		for (int i = 0; i < this->count(); ++i)
+		{
+			QWidget *widget = this->itemAt(i)->widget();
+			if (widget != NULL)
+			{
+				std::string type = widget->metaObject()->className();
+
+				if(type == "QLineEdit")
+				{
+					QLineEdit *valueLineEdit =  qobject_cast<QLineEdit *>(widget);
+					value = valueLineEdit->text().toStdString();
+					std::cout<< value<<"\n";
+					saveConfig(name, value);
+				}
+				else
+				{
+					QLabel *nameLabel =  qobject_cast<QLabel*>(widget);
+					name = nameLabel->text().toStdString();
+					std::cout<<name<<" ";
+				}
+
+
+				//widget->setVisible(false);
+			}
+			else
+			{
+				// You may want to recurse, or perform different actions on layouts.
+				// See gridLayout->itemAt(i)->layout()
+			}
+		}
+
+	}
+
+private:
+		void saveConfig(std::string name, std::string value) {
+		GITPP::REPO r;
+		auto c = r.config();
+		c.create(name);
+		c[name] = value;
+
+	}
 
 };
