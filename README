@@ -1,28 +1,46 @@
 == 2811 CW3 material
-
+ 
 a qt application with multiple tabs.
-
+ 
+Our application includes:
+- A tab that list all the branches in the repository
+and allows the user to checkout a branch.
+(Created by Xiangdi Chai - sc17xc)
+ 
+- A tab that lists the confiurations of the repository and allows
+the user to edit them.
+(Created by Slavyana Chervenkondeva - sc17sdc)
+ 
+-A tab that lists all the commits in the repository.
+(Created by Omar Elebiary - el17oa)
+ 
+-A tab for the settings of the gui window.
+(Created by Frazer Clews - el17flc)
+ 
+-A tab with statistics about the repository.
+(Created by Dobri Tsvetkov - el17dtt)
+ 
 == prerequisites
-
+ 
 - qmake
 - qt >= 4.6
-
+ 
 on DEC10 machines, you need to enter
-
+ 
 $ module add qt
-
+ 
 to make these available temporarily. On your own machine you might get away
 with
-
+ 
 $ apt-get install qtbase5-dev
-
+ 
 the latter is permanent.
-
+ 
 == build
-
+ 
 $ ./configure
 $ make
-
+ 
 == run
-
+ 
 $ ./2811_gui
