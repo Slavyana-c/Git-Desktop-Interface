@@ -1,4 +1,4 @@
-#include "globals.h"
+/*#include "globals.h"
 
 #include <QLabel>
 #include <QHBoxLayout>
@@ -23,3 +23,4 @@ public:
 };
 INSTALL_TAB(HelloWorldLabel, "Statistics");
 }
+*/

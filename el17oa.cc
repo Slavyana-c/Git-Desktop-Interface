@@ -64,7 +64,7 @@ public:
 			QString message = QString::fromStdString(i.message());
 			QString time1 = QString::fromStdString(i.time());
 
-      
+
       layout1->addRow(new QLabel("Author: "),new QLabel(name));
 			layout1->addRow(new QLabel("Commit message: "),new QLabel(message));
 			layout1->addRow(new QLabel("Time: "),new QLabel(time1));

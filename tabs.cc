@@ -22,6 +22,9 @@ TabDialog::TabDialog(QWidget *parent)
 	 QVBoxLayout *mainLayout = new QVBoxLayout;
     mainLayout->addWidget(_tabWidget);
 
+    //int index = _tabWidget->currentIndex();
+    //QString tabtext = _tabWidget->tabText(index);
+
 	 // transfers ownership
     setLayout(mainLayout);
 }

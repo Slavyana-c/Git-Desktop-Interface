@@ -3,41 +3,46 @@
 
 #include "window.h"
 #include "tabs.h"
+#include "globals.h"
 
-//#include <QtWidgets> // qt5 only?
 #include <QHBoxLayout>
 #include <QStatusBar>
 #include <QMenuBar>
 #include <QApplication>
-
+#include <QCoreApplication>
+#include <QSize>
+#include <QDesktopWidget>
 
 HelloWindow::HelloWindow()
 {
 	createWindowContent();
 	createMenuAndStatusBar();
+	pQMainWndow = this;
+	dark();
 }
 
 
 void HelloWindow::createWindowContent()
 {
 	// Create layout
-
+	//QString tabname = HelloWorldLabel;
+	QCoreApplication::setApplicationName("GitLab");
 	TabDialog* tabs=new TabDialog();
 
+	//TabDialog
+
 	QHBoxLayout* layout=new QHBoxLayout();
-	layout->addStretch();
 
 	// transfer ownership?
 	layout->addWidget(tabs);
-	layout->addStretch();
 
 	// Put layout in the middle of the window
 	_mainWidget = new QWidget();
-
-	setMinimumHeight(650);
 	_mainWidget->setLayout(layout);
+	_mainWidget->setMinimumSize(508, 0);
 
-	//_mainWidget->setStyleSheet("background-color: #00FF00");
+	QRect resolution = QApplication::desktop()->screenGeometry();
+	_mainWidget->setMaximumSize(resolution.width(), resolution.height());
 
 	setCentralWidget(_mainWidget);
 }
@@ -45,8 +50,6 @@ void HelloWindow::createWindowContent()
 
 void HelloWindow::createMenuAndStatusBar()
 {
-	//statusBar()->showMessage("Program developed and owned by Omar");
-
 	QMenu* fileMenu = menuBar()->addMenu("&File");
 
 	QAction* open = fileMenu->addAction("&Open");
@@ -58,4 +61,10 @@ void HelloWindow::createMenuAndStatusBar()
 	quit->setStatusTip("Quit the application");
 
 	connect(quit, SIGNAL(triggered()), qApp, SLOT(quit()));
+}
+
+
+void HelloWindow::dark()
+{
+	_mainWidget->setStyleSheet("background-color: #ADD8E6");
 }
