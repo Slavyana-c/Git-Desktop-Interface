@@ -467,7 +467,9 @@ sc17xc.o: sc17xc.cc globals.h \
 		sc17xc.moc
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sc17xc.o sc17xc.cc
 
-el17dtt.o: el17dtt.cc 
+el17dtt.o: el17dtt.cc globals.h \
+		dispatch.h \
+		mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o el17dtt.o el17dtt.cc
 
 el17flc.o: el17flc.cc globals.h \

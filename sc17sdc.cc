@@ -1,7 +1,12 @@
+/********************************************************************************
+** Configure Repository Tab (sc17sdc.cc)
+**
+** Created by: Slavyana Dianova Chervenkondeva - sc17sdc
+********************************************************************************/
+
 #include "globals.h"
 #include "gitpp.h"
 #include "window.h"
-
 #include <QLabel>
 #include <QString>
 #include <QHBoxLayout>
@@ -11,20 +16,18 @@
 #include <QComboBox>
 #include <QPushButton>
 #include <QLineEdit>
-
 #include "myFormLayout.h"
 
-namespace{
+namespace
+{
 
-class HelloWorldLabel : public QWidget{
+class HelloWorldLabel : public QWidget
+{
 public:
-	HelloWorldLabel() : QWidget() {
+  HelloWorldLabel() : QWidget()
+  {
 
-    QFormLayout *formLayout = new MyLayout();
-		QPushButton *button1 = new QPushButton("Save");
-		QHBoxLayout *buttonLayout = new QHBoxLayout();
-
-    GITPP::REPO r;
+    // Go through each configuration item and assign the widgets
     for (auto i : r.config())
     {
       QString name = QString::fromStdString(i.name());
@@ -32,28 +35,31 @@ public:
       formLayout->addRow(new QLabel(name), new QLineEdit(value));
     }
 
-		mainLayout->addLayout(formLayout);
+    // Add everything to the main layout
+    mainLayout->addLayout(formLayout);
+    buttonLayout->addWidget(saveButton);
+    mainLayout->addLayout(buttonLayout);
 
-		buttonLayout->addWidget(button1);
-
-		mainLayout->addLayout(buttonLayout);
-
-		connect(button1, SIGNAL(clicked()), formLayout, SLOT(saveEdit()));
-
+    // Create button connections
+    connect(saveButton, SIGNAL(clicked()), formLayout, SLOT(saveEdit()));
+		connect(saveButton, &QPushButton::clicked, this, &HelloWorldLabel::showPopup);
+    // Display the layout
     setLayout(mainLayout);
+  }
 
-	}
-
-QVBoxLayout *mainLayout = new QVBoxLayout();
-
-
+private:
+  QVBoxLayout *mainLayout = new QVBoxLayout();
+  QFormLayout *formLayout = new MyFormLayout();
+  QPushButton *saveButton = new QPushButton("Save");
+  QHBoxLayout *buttonLayout = new QHBoxLayout();
+  GITPP::REPO r;
 
 public slots:
+  void showPopup() {
+			QMessageBox::information(this,"Success!","Changes saved successfully.");
+  }
 
 };
 
-
 INSTALL_TAB(HelloWorldLabel, "Configure Repository");
-
-
 }

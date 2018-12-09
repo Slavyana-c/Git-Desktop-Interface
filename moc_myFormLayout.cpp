@@ -20,27 +20,27 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_MyLayout_t {
+struct qt_meta_stringdata_MyFormLayout_t {
     QByteArrayData data[3];
-    char stringdata0[19];
+    char stringdata0[23];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_MyLayout_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_MyFormLayout_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_MyLayout_t qt_meta_stringdata_MyLayout = {
+static const qt_meta_stringdata_MyFormLayout_t qt_meta_stringdata_MyFormLayout = {
     {
-QT_MOC_LITERAL(0, 0, 8), // "MyLayout"
-QT_MOC_LITERAL(1, 9, 8), // "saveEdit"
-QT_MOC_LITERAL(2, 18, 0) // ""
+QT_MOC_LITERAL(0, 0, 12), // "MyFormLayout"
+QT_MOC_LITERAL(1, 13, 8), // "saveEdit"
+QT_MOC_LITERAL(2, 22, 0) // ""
 
     },
-    "MyLayout\0saveEdit\0"
+    "MyFormLayout\0saveEdit\0"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_MyLayout[] = {
+static const uint qt_meta_data_MyFormLayout[] = {
 
  // content:
        7,       // revision
@@ -62,10 +62,10 @@ static const uint qt_meta_data_MyLayout[] = {
        0        // eod
 };
 
-void MyLayout::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void MyFormLayout::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        MyLayout *_t = static_cast<MyLayout *>(_o);
+        MyFormLayout *_t = static_cast<MyFormLayout *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->saveEdit(); break;
@@ -75,26 +75,26 @@ void MyLayout::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
     Q_UNUSED(_a);
 }
 
-const QMetaObject MyLayout::staticMetaObject = {
-    { &QFormLayout::staticMetaObject, qt_meta_stringdata_MyLayout.data,
-      qt_meta_data_MyLayout,  qt_static_metacall, nullptr, nullptr}
+const QMetaObject MyFormLayout::staticMetaObject = {
+    { &QFormLayout::staticMetaObject, qt_meta_stringdata_MyFormLayout.data,
+      qt_meta_data_MyFormLayout,  qt_static_metacall, nullptr, nullptr}
 };
 
 
-const QMetaObject *MyLayout::metaObject() const
+const QMetaObject *MyFormLayout::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *MyLayout::qt_metacast(const char *_clname)
+void *MyFormLayout::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_MyLayout.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_MyFormLayout.stringdata0))
         return static_cast<void*>(this);
     return QFormLayout::qt_metacast(_clname);
 }
 
-int MyLayout::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int MyFormLayout::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QFormLayout::qt_metacall(_c, _id, _a);
     if (_id < 0)

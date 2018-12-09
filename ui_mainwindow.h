@@ -13,7 +13,6 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QFrame>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLCDNumber>
@@ -21,10 +20,8 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QScrollBar>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
-#include <QtWidgets/QTableView>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QTreeWidget>
 #include <QtWidgets/QWidget>
@@ -38,16 +35,16 @@ public:
     QHBoxLayout *horizontalLayout_3;
     QTabWidget *tabWidget;
     QWidget *tab;
-    QFrame *frame;
-    QHBoxLayout *horizontalLayout;
-    QTableView *tableView;
-    QScrollBar *verticalScrollBar;
     QPushButton *pushButton;
     QLineEdit *lineEdit;
     QLCDNumber *lcdNumber;
     QLCDNumber *lcdNumber_2;
     QLabel *label;
     QLabel *label_2;
+    QWidget *widget;
+    QLabel *label_3;
+    QLabel *label_4;
+    QLabel *label_5;
     QWidget *tab_2;
     QHBoxLayout *horizontalLayout_2;
     QTreeWidget *treeWidget;
@@ -58,7 +55,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(1009, 641);
+        MainWindow->resize(1027, 642);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         horizontalLayout_3 = new QHBoxLayout(centralWidget);
@@ -67,29 +64,9 @@ public:
         horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
         tabWidget = new QTabWidget(centralWidget);
         tabWidget->setObjectName(QStringLiteral("tabWidget"));
+        tabWidget->setMinimumSize(QSize(1009, 585));
         tab = new QWidget();
         tab->setObjectName(QStringLiteral("tab"));
-        frame = new QFrame(tab);
-        frame->setObjectName(QStringLiteral("frame"));
-        frame->setGeometry(QRect(9, 85, 931, 271));
-        frame->setMinimumSize(QSize(871, 271));
-        frame->setFrameShape(QFrame::StyledPanel);
-        frame->setFrameShadow(QFrame::Raised);
-        horizontalLayout = new QHBoxLayout(frame);
-        horizontalLayout->setSpacing(6);
-        horizontalLayout->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        tableView = new QTableView(frame);
-        tableView->setObjectName(QStringLiteral("tableView"));
-
-        horizontalLayout->addWidget(tableView);
-
-        verticalScrollBar = new QScrollBar(frame);
-        verticalScrollBar->setObjectName(QStringLiteral("verticalScrollBar"));
-        verticalScrollBar->setOrientation(Qt::Vertical);
-
-        horizontalLayout->addWidget(verticalScrollBar);
-
         pushButton = new QPushButton(tab);
         pushButton->setObjectName(QStringLiteral("pushButton"));
         pushButton->setGeometry(QRect(830, 30, 101, 25));
@@ -107,7 +84,20 @@ public:
         label->setGeometry(QRect(30, 390, 141, 17));
         label_2 = new QLabel(tab);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(30, 430, 131, 17));
+        label_2->setGeometry(QRect(30, 430, 141, 17));
+        widget = new QWidget(tab);
+        widget->setObjectName(QStringLiteral("widget"));
+        widget->setGeometry(QRect(20, 110, 951, 251));
+        label_3 = new QLabel(tab);
+        label_3->setObjectName(QStringLiteral("label_3"));
+        label_3->setGeometry(QRect(20, 90, 111, 17));
+        label_4 = new QLabel(tab);
+        label_4->setObjectName(QStringLiteral("label_4"));
+        label_4->setGeometry(QRect(460, 90, 121, 17));
+        label_4->setFrameShape(QFrame::NoFrame);
+        label_5 = new QLabel(tab);
+        label_5->setObjectName(QStringLiteral("label_5"));
+        label_5->setGeometry(QRect(830, 90, 131, 20));
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QStringLiteral("tab_2"));
@@ -147,6 +137,9 @@ public:
         pushButton->setText(QApplication::translate("MainWindow", "Search name", Q_NULLPTR));
         label->setText(QApplication::translate("MainWindow", "Number of commits", Q_NULLPTR));
         label_2->setText(QApplication::translate("MainWindow", "Contributors", Q_NULLPTR));
+        label_3->setText(QApplication::translate("MainWindow", "Name:", Q_NULLPTR));
+        label_4->setText(QApplication::translate("MainWindow", "e-mail:", Q_NULLPTR));
+        label_5->setText(QApplication::translate("MainWindow", "personal commits:", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "Users", Q_NULLPTR));
         QTreeWidgetItem *___qtreewidgetitem = treeWidget->headerItem();
         ___qtreewidgetitem->setText(0, QApplication::translate("MainWindow", "1", Q_NULLPTR));
