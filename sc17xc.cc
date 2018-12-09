@@ -46,6 +46,9 @@ public:
 	}
 private slots:
 	void  changePath(const QString& name){
+		GITPP::REPO r;
+		std::string file = name.toUtf8().constData();
+		r.checkout(file);
 		QMessageBox::information(this,"successful","successfully switched to "+ name);
 	}
 
