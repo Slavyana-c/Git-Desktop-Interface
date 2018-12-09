@@ -10,6 +10,8 @@
 #include <QGridLayout>
 #include <QPushButton>
 #include <QIcon>
+#include <QSlider>
+
 
 
 
@@ -34,7 +36,6 @@ public:
 		layout1->addRow(new QLabel(" "));
 
 
-
     search->addRow(new QLabel(" "));
 		search->addRow(new QLineEdit(""));
 		search->addWidget(searchButton);
@@ -44,6 +45,7 @@ public:
     connect(searchButton, SIGNAL(clicked()), search, SLOT(showEdit()));
 
 
+    int x=0;
     GITPP::REPO r;
 		for (auto i : r.commits()){
 
@@ -53,13 +55,20 @@ public:
 			QString message = QString::fromStdString(i.message());
 			QString time1 = QString::fromStdString(i.time());
 
-      layout1->addRow(new QLabel(" "));
+      //layout1->addRow(new QLabel(" "));
       layout1->addRow(new QLabel("Author: "),new QLabel(name));
 			layout1->addRow(new QLabel("Commit message: "),new QLabel(message));
 			layout1->addRow(new QLabel("Time: "),new QLabel(time1));
 			layout1->addRow(new QLabel("************************************************"));
-			
+
+			x++;
+
+			if(x==5){
+				break;
+			}
+
 		}
+
 		h->addLayout(layout1);
 		h->addLayout(search);
 		setLayout(h);
