@@ -37,25 +37,20 @@ public:
 		buttonLayout->addWidget(button1);
 
 		mainLayout->addLayout(buttonLayout);
-		QWidget* test = new QWidget();
 
-		//connect(button1, &QPushButton::clicked, this, &HelloWorldLabel::showEdit);
 		connect(button1, SIGNAL(clicked()), formLayout, SLOT(saveEdit()));
-
 
     setLayout(mainLayout);
 
 	}
 
-QHBoxLayout *mainLayout = new QHBoxLayout();
+QVBoxLayout *mainLayout = new QVBoxLayout();
 
 
 
 public slots:
 
-}; // end
-
-
+};
 
 
 INSTALL_TAB(HelloWorldLabel, "Configure Repository");
