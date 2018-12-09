@@ -4,6 +4,7 @@
 #include <QLineEdit>
 #include <QLayoutItem>
 #include <QLabel>
+#include <QMessageBox>
 
 class MyLayout : public QFormLayout {
 	Q_OBJECT
@@ -49,7 +50,6 @@ class MyLayout : public QFormLayout {
 				// See gridLayout->itemAt(i)->layout()
 			}
 		}
-
 	}
 
 private:
@@ -58,7 +58,6 @@ private:
 		auto c = r.config();
 		c.create(name);
 		c[name] = value;
-
 	}
 
 };

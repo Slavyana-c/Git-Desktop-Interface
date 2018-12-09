@@ -51,6 +51,7 @@ public:
 private slots:
 	void  changePath(const QString& name){
 		GITPP::REPO r;
+<<<<<<< HEAD
 		//std::string fileName;
 		//QString name = button->objectName();
 		std::string utf8_text = name.toUtf8().constData();
@@ -58,6 +59,11 @@ private slots:
 		//r.checkout( utf8_text);
 		std::string fileName = utf8_text;
 		//sINSTALL_TAB(HelloWorldLabel, "List Commits");
+=======
+		std::string file = name.toUtf8().constData();
+		r.checkout(file);
+		QMessageBox::information(this,"successful","successfully switched to "+ name);
+>>>>>>> 020cc877452b1cb38a90ca542dd08bc7f35bb889
 	}
 
 };

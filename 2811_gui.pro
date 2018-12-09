@@ -21,8 +21,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 # Input
-HEADERS += window.h tabs.h myFormLayout.h
-SOURCES += globals.cc main.cc window.cc tabs.cc sc17sdc.cc sc17xc.cc el17dtt.cc el17flc.cc el17oa.cc
+HEADERS += window.h tabs.h myFormLayout.h mainwindow.h
+SOURCES += globals.cc main.cc window.cc tabs.cc sc17sdc.cc sc17xc.cc el17dtt.cc el17flc.cc mainwindow.cpp el17oa.cc
+
+FORMS += \
+        mainwindow.ui
 
 # just link demo tabs
 # LIBS += scsfsa.o
