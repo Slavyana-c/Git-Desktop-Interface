@@ -9,6 +9,8 @@
 #include <QLineEdit>
 #include <QGridLayout>
 #include <QPushButton>
+#include <QIcon>
+
 
 
 namespace{
@@ -19,7 +21,6 @@ class HelloWorldLabel : public QWidget{
 public:
 	HelloWorldLabel() : QWidget(){
 		QHBoxLayout* h = new QHBoxLayout;
-		QLabel *label = new QLabel(this);
 		QHBoxLayout *buttonLayout = new QHBoxLayout();
 
 		QFormLayout* layout1 = new QFormLayout;
@@ -29,17 +30,15 @@ public:
 
 
 
-
-		label->setText("<u>Your commits:</u>\n");
+    layout1->addRow(new QLabel("<u><b>Commits:</b></u>"));
 		layout1->addRow(new QLabel(" "));
-		layout1->addRow(new QLabel("====\t\t\t\t\t======"));
-		layout1->addRow(new QLabel("Name\t\t\t\t\tComment"));
-		layout1->addRow(new QLabel("====\t\t\t\t\t======"));
+
 
 
     search->addRow(new QLabel(" "));
-		search->addRow(new QLineEdit("search..."));
+		search->addRow(new QLineEdit(""));
 		search->addWidget(searchButton);
+		searchButton->setIcon(QIcon("searchIcon.png"));
 
 
     connect(searchButton, SIGNAL(clicked()), search, SLOT(showEdit()));
@@ -48,15 +47,18 @@ public:
     GITPP::REPO r;
 		for (auto i : r.commits()){
 
-			layout1->addRow(new QLabel(" "));
+
 
 			QString name = QString::fromStdString(i.signature().name());
 			QString message = QString::fromStdString(i.message());
+			QString time1 = QString::fromStdString(i.time());
 
-
-			layout1->addRow(new QLabel(name),new QLabel(message));
-
-			//layout1->addRow(new QLabel(id1));
+      layout1->addRow(new QLabel(" "));
+      layout1->addRow(new QLabel("Author: "),new QLabel(name));
+			layout1->addRow(new QLabel("Commit message: "),new QLabel(message));
+			layout1->addRow(new QLabel("Time: "),new QLabel(time1));
+			layout1->addRow(new QLabel("************************************************"));
+			
 		}
 		h->addLayout(layout1);
 		h->addLayout(search);
