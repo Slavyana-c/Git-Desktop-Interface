@@ -1,8 +1,8 @@
-/********************************************************************************
+/*******************************************************************************
 ** Configure Repository Tab (sc17sdc.cc)
 **
 ** Created by: Slavyana Dianova Chervenkondeva - sc17sdc
-********************************************************************************/
+*******************************************************************************/
 
 #include "globals.h"
 #include "gitpp.h"
@@ -42,7 +42,7 @@ public:
 
     // Create button connections
     connect(saveButton, SIGNAL(clicked()), formLayout, SLOT(saveEdit()));
-		connect(saveButton, &QPushButton::clicked, this, &HelloWorldLabel::showPopup);
+		connect(saveButton, &QPushButton::clicked,this,&HelloWorldLabel::showPopup);
     // Display the layout
     setLayout(mainLayout);
   }

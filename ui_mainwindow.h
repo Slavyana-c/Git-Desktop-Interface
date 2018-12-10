@@ -45,9 +45,15 @@ public:
     QPushButton *pushButton_2;
     QFrame *line_2;
     QHBoxLayout *horizontalLayout_4;
-    QLabel *label_2;
-    QLabel *label_3;
+    QWidget *widget;
+    QVBoxLayout *verticalLayout_2;
     QLabel *label;
+    QWidget *widget_3;
+    QVBoxLayout *verticalLayout_4;
+    QLabel *label_3;
+    QWidget *widget_2;
+    QVBoxLayout *verticalLayout_3;
+    QLabel *label_2;
     QFrame *line;
     QFormLayout *formLayout;
     QLabel *label_4;
@@ -110,20 +116,47 @@ public:
         horizontalLayout_4 = new QHBoxLayout();
         horizontalLayout_4->setSpacing(6);
         horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
-        label_2 = new QLabel(tab);
-        label_2->setObjectName(QStringLiteral("label_2"));
-
-        horizontalLayout_4->addWidget(label_2);
-
-        label_3 = new QLabel(tab);
-        label_3->setObjectName(QStringLiteral("label_3"));
-
-        horizontalLayout_4->addWidget(label_3);
-
-        label = new QLabel(tab);
+        widget = new QWidget(tab);
+        widget->setObjectName(QStringLiteral("widget"));
+        verticalLayout_2 = new QVBoxLayout(widget);
+        verticalLayout_2->setSpacing(6);
+        verticalLayout_2->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        label = new QLabel(widget);
         label->setObjectName(QStringLiteral("label"));
 
-        horizontalLayout_4->addWidget(label);
+        verticalLayout_2->addWidget(label);
+
+
+        horizontalLayout_4->addWidget(widget);
+
+        widget_3 = new QWidget(tab);
+        widget_3->setObjectName(QStringLiteral("widget_3"));
+        verticalLayout_4 = new QVBoxLayout(widget_3);
+        verticalLayout_4->setSpacing(6);
+        verticalLayout_4->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
+        label_3 = new QLabel(widget_3);
+        label_3->setObjectName(QStringLiteral("label_3"));
+
+        verticalLayout_4->addWidget(label_3);
+
+
+        horizontalLayout_4->addWidget(widget_3);
+
+        widget_2 = new QWidget(tab);
+        widget_2->setObjectName(QStringLiteral("widget_2"));
+        verticalLayout_3 = new QVBoxLayout(widget_2);
+        verticalLayout_3->setSpacing(6);
+        verticalLayout_3->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
+        label_2 = new QLabel(widget_2);
+        label_2->setObjectName(QStringLiteral("label_2"));
+
+        verticalLayout_3->addWidget(label_2);
+
+
+        horizontalLayout_4->addWidget(widget_2);
 
 
         verticalLayout->addLayout(horizontalLayout_4);
@@ -211,9 +244,9 @@ public:
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
         pushButton_2->setText(QApplication::translate("MainWindow", "Search name", Q_NULLPTR));
-        label_2->setText(QApplication::translate("MainWindow", "name:", Q_NULLPTR));
-        label_3->setText(QApplication::translate("MainWindow", "e-mail:", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "number of commits:", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "name:", Q_NULLPTR));
+        label_3->setText(QApplication::translate("MainWindow", "number of commits:", Q_NULLPTR));
+        label_2->setText(QApplication::translate("MainWindow", "e-mail:", Q_NULLPTR));
         label_4->setText(QApplication::translate("MainWindow", "Number of all commits: ", Q_NULLPTR));
         label_5->setText(QApplication::translate("MainWindow", "Number of contributors: ", Q_NULLPTR));
         label_6->setText(QApplication::translate("MainWindow", "Progress", Q_NULLPTR));
