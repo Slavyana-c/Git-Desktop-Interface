@@ -16,7 +16,7 @@
 HelloWindow::HelloWindow()
 {
 	createWindowContent();
-	createMenuAndStatusBar();
+	//createMenuAndStatusBar();
 	pQMainWndow = this;
 	dark();
 }

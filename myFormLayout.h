@@ -32,7 +32,6 @@ class MyFormLayout : public QFormLayout
 				{
 					QLineEdit *valueLineEdit = qobject_cast<QLineEdit *>(widget);
 					value = valueLineEdit->text().toStdString();
-					std::cout << value << "\n";
 					saveConfig(name, value);
 				}
 
@@ -41,7 +40,6 @@ class MyFormLayout : public QFormLayout
 				{
 					QLabel *nameLabel = qobject_cast<QLabel *>(widget);
 					name = nameLabel->text().toStdString();
-					std::cout << name << " ";
 				}
 			}
 		}

@@ -23,7 +23,7 @@ class HelloWorldLabel : public QWidget{
 
 			QCheckBox* darktheme = new QCheckBox("- Dark Theme", this);
 
-			connect(darktheme, SIGNAL(clicked(bool)), pQMainWndow, SLOT(HelloWindow::dark()));
+			//connect(darktheme, SIGNAL(clicked(bool)), pQMainWndow, SLOT(HelloWindow::dark()));
 
 			QRadioButton* normal = new QRadioButton("Normal", this);
 			QRadioButton* colourful = new QRadioButton("Colourful", this);
