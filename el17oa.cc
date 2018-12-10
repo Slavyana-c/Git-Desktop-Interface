@@ -3,6 +3,7 @@
 
 #include <QLabel>
 #include <QHBoxLayout>
+#include <QVBoxLayout>
 #include <QFormLayout>
 #include <QDesktopServices>
 #include <QUrl>
@@ -11,8 +12,8 @@
 #include <QPushButton>
 #include <QIcon>
 #include <QSlider>
-
-
+#include <QWidget>
+#include <QScrollArea>
 
 
 
@@ -24,27 +25,27 @@ class HelloWorldLabel : public QWidget{
 
 public:
 	HelloWorldLabel() : QWidget(){
-		QHBoxLayout* h = new QHBoxLayout;
-		//QHBoxLayout *buttonLayout = new QHBoxLayout();
+		QVBoxLayout* w = new QVBoxLayout();
+		QScrollArea* scroll =new QScrollArea();
+		QWidget* tmp = new QWidget();
+		QVBoxLayout* h = new QVBoxLayout(tmp);
 
-		QFormLayout* layout1 = new QFormLayout;
-		QPushButton *searchButton = new QPushButton("Search Commits!!");
+		 QFormLayout* layout1 = new QFormLayout;
+		 QPushButton *searchButton = new QPushButton("Search Commits!!");
 
 		QFormLayout* search = new QFormLayout;
 
 
+    w->addWidget(new QLabel("<u><b>Commits:</b></u>"));
 
-    layout1->addRow(new QLabel("<u><b>Commits:</b></u>"));
-		layout1->addRow(new QLabel(" "));
 
 
     search->addRow(new QLabel(" "));
-		search->addRow(new QLineEdit(""));
-		search->addWidget(searchButton);
+		h->addWidget(searchButton);
+		h->addWidget(new QLineEdit("search.."));
 		searchButton->setIcon(QIcon("searchIcon.png"));
 
 
-    connect(searchButton, SIGNAL(clicked()), search, SLOT(showEdit()));
 
 
     int x=0,counter=0;
@@ -68,27 +69,21 @@ public:
       layout1->addRow(new QLabel("Author: "),new QLabel(name));
 			layout1->addRow(new QLabel("Commit message: "),new QLabel(message));
 			layout1->addRow(new QLabel("Time: "),new QLabel(time1));
-			layout1->addRow(new QLabel("************************************************"));
-
-
+			layout1->addRow(new QLabel("****************************************************"));
 
 			x++;
-
-			if(x==5){
-				break;
-			}
-
 		}
 
 		layout1->addRow(new QLabel("Total number of commits:"),new QLabel(QString::number(counter)));
-    h->addStretch();
+    scroll->setWidget(tmp);
+		scroll->setWidgetResizable(true);
 		h->addLayout(layout1);
 		h->addLayout(search);
-		setLayout(h);
+		w->addWidget(scroll);
+		setLayout(w);
 
 	}
 };
-
 
 
 
