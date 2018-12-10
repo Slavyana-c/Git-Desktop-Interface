@@ -57,6 +57,8 @@ public:
 			counter++;
 		}
 
+    layout1->addRow(new QLabel("Total number of commits:"),new QLabel(QString::number(counter)));
+		layout1->addRow(new QLabel("=================="));
 		for (auto i : r.commits()){
 
 
@@ -74,7 +76,7 @@ public:
 			x++;
 		}
 
-		layout1->addRow(new QLabel("Total number of commits:"),new QLabel(QString::number(counter)));
+		
     scroll->setWidget(tmp);
 		scroll->setWidgetResizable(true);
 		h->addLayout(layout1);
