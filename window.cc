@@ -66,5 +66,5 @@ void HelloWindow::createMenuAndStatusBar()
 
 void HelloWindow::dark()
 {
-	_mainWidget->setStyleSheet("background-color: #ADD8E6");
+	// _mainWidget->setStyleSheet("background-color: #ADD8E6");
 }

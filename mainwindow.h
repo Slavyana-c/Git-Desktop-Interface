@@ -1,6 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include "gitpp.h"
 #include <QMainWindow>
 
 namespace Ui {
@@ -17,6 +17,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    GITPP::REPO r;
 };
 
 #endif // MAINWINDOW_H
