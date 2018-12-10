@@ -195,7 +195,7 @@ public:
 
         progressBar = new QProgressBar(tab);
         progressBar->setObjectName(QStringLiteral("progressBar"));
-        progressBar->setValue(24);
+        progressBar->setValue(98);
 
         formLayout->setWidget(2, QFormLayout::FieldRole, progressBar);
 
