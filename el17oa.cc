@@ -26,12 +26,13 @@ class HelloWorldLabel : public QWidget{
 public:
 	HelloWorldLabel() : QWidget(){
 		QVBoxLayout* w = new QVBoxLayout();
+		//QVBoxLayout* zz = new QVBoxLayout();
 		QScrollArea* scroll =new QScrollArea();
 		QWidget* tmp = new QWidget();
 		QVBoxLayout* h = new QVBoxLayout(tmp);
 
-		 QFormLayout* layout1 = new QFormLayout;
-		 QPushButton *searchButton = new QPushButton("Search Commits!!");
+		QFormLayout* layout1 = new QFormLayout;
+		QPushButton *searchButton = new QPushButton("Search Commits!!");
 
 		QFormLayout* search = new QFormLayout;
 
@@ -40,9 +41,11 @@ public:
 
 
 
-    search->addRow(new QLabel(" "));
-		h->addWidget(searchButton);
-		h->addWidget(new QLineEdit("search.."));
+    //search->addRow(new QLabel(" "));
+		//w->addWidget(searchButton);
+		//w->addWidget(new QLineEdit("search.."));
+
+
 		searchButton->setIcon(QIcon("searchIcon.png"));
 
 
@@ -76,13 +79,15 @@ public:
 			x++;
 		}
 
-		
+
     scroll->setWidget(tmp);
 		scroll->setWidgetResizable(true);
 		h->addLayout(layout1);
 		h->addLayout(search);
 		w->addWidget(scroll);
+		//zz->addWidget(scroll);
 		setLayout(w);
+		//setLayout(zz);
 
 	}
 };
