@@ -29,6 +29,8 @@ class HelloWorldLabel : public QWidget{
 	Q_OBJECT
 public:
 	HelloWorldLabel() : QWidget(){
+		left->setFrameShape( QFrame::StyledPanel);
+		left->setFrameShadow(QFrame::Sunken);
     int noOfBranches = 0;
 
 		group->setExclusive(true);
@@ -45,15 +47,16 @@ public:
  			if (name == "master"){
 				group->button(noOfBranches)->setChecked(true);
 				int x=0;
-				layoutRight->addRow(new QLabel("Your commits in : "), new QLabel(name));
-				layoutRight->addRow(new QLabel("--------------------------------------------------------------------"));
 				layoutRight->addRow(new QLabel(""));
+				layoutRight->addRow(new QLabel("Your commits in : "), new QLabel(name));
+				layoutRight->addRow(new QLabel("______________________________________________________________"));
+			  layoutRight->addRow(new QLabel(""));
 				for (auto i : r.commits()){
 					QString message = QString::fromStdString(i.message());
           QString author = QString::fromStdString(i.signature().name());
 					layoutRight->addRow(new QLabel("Author: "),new QLabel(author));
 					layoutRight->addRow(new QLabel("Commit message: "),new QLabel(message));
-					layoutRight->addRow(new QLabel("************************************************"));
+					layoutRight->addRow(new QLabel("______________________________________________________________"));
 					x++;
 					if(x==4){
 						break;
@@ -74,16 +77,15 @@ private:
 	QSplitter *splitter = new QSplitter (this);
 	QVBoxLayout *layoutLeft = new QVBoxLayout();
 	QFormLayout *layoutRight = new QFormLayout();
-	QWidget *left = new QWidget();
+	QFrame *left = new QFrame();
 	QWidget *right = new QWidget();
 	GITPP::REPO r;
 	QSignalMapper *mapper = new QSignalMapper();
-
 	QButtonGroup* group = new QButtonGroup();
 
 
-	void clearLayout(QFormLayout *layout)
-{
+
+	void clearLayout(QFormLayout *layout){
     if (layout) {
         while(layout->count() > 0){
             QLayoutItem *item = layout->takeAt(0);
@@ -103,8 +105,9 @@ private slots:
 		r.checkout(file);
 		QMessageBox::information(this,"successful","switched to branch "+ name);
 		clearLayout(layoutRight);
+		layoutRight->addRow(new QLabel(""));
 		layoutRight->addRow(new QLabel("Your commits in : "), new QLabel(name));
-		layoutRight->addRow(new QLabel("-----------------------------------------------------------------"));
+		layoutRight->addRow(new QLabel("______________________________________________________________"));
 		layoutRight->addRow(new QLabel(""));
 		int x=0;
 		for (auto i : r.commits()){
@@ -112,7 +115,7 @@ private slots:
 			QString author = QString::fromStdString(i.signature().name());
 			layoutRight->addRow(new QLabel("Author: "),new QLabel(author));
 			layoutRight->addRow(new QLabel("Commit message: "),new QLabel(message));
-			layoutRight->addRow(new QLabel("************************************************"));
+			layoutRight->addRow(new QLabel("______________________________________________________________"));
 			x++;
 
 			if(x==4){
