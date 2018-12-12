@@ -584,7 +584,7 @@ moc_window.cpp: /home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidget
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qtabwidget.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qicon.h \
 		window.h
-	/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/bin/moc $(DEFINES) -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/mkspecs/linux-g++ -I'/home/cserv1_a/soc_ug/sc17sdc/Year2/User Interfaces/Final/ui_coursework_3' -I'/home/cserv1_a/soc_ug/sc17sdc/Year2/User Interfaces/Final/ui_coursework_3' -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore window.h -o moc_window.cpp
+	/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/bin/moc $(DEFINES) -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/mkspecs/linux-g++ -I/home/cserv1_a/soc_ug/sc17xc/Desktop/coursework3_gitlab -I/home/cserv1_a/soc_ug/sc17xc/Desktop/coursework3_gitlab -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore window.h -o moc_window.cpp
 
 moc_tabs.cpp: /home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QDialog \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qdialog.h \
@@ -689,7 +689,7 @@ moc_tabs.cpp: /home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qtouchdevice.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/QString \
 		tabs.h
-	/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/bin/moc $(DEFINES) -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/mkspecs/linux-g++ -I'/home/cserv1_a/soc_ug/sc17sdc/Year2/User Interfaces/Final/ui_coursework_3' -I'/home/cserv1_a/soc_ug/sc17sdc/Year2/User Interfaces/Final/ui_coursework_3' -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore tabs.h -o moc_tabs.cpp
+	/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/bin/moc $(DEFINES) -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/mkspecs/linux-g++ -I/home/cserv1_a/soc_ug/sc17xc/Desktop/coursework3_gitlab -I/home/cserv1_a/soc_ug/sc17xc/Desktop/coursework3_gitlab -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore tabs.h -o moc_tabs.cpp
 
 moc_myFormLayout.cpp: /home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QFormLayout \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qformlayout.h \
@@ -813,7 +813,7 @@ moc_myFormLayout.cpp: /home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/Qt
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qmessagebox.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qdialog.h \
 		myFormLayout.h
-	/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/bin/moc $(DEFINES) -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/mkspecs/linux-g++ -I'/home/cserv1_a/soc_ug/sc17sdc/Year2/User Interfaces/Final/ui_coursework_3' -I'/home/cserv1_a/soc_ug/sc17sdc/Year2/User Interfaces/Final/ui_coursework_3' -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore myFormLayout.h -o moc_myFormLayout.cpp
+	/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/bin/moc $(DEFINES) -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/mkspecs/linux-g++ -I/home/cserv1_a/soc_ug/sc17xc/Desktop/coursework3_gitlab -I/home/cserv1_a/soc_ug/sc17xc/Desktop/coursework3_gitlab -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore myFormLayout.h -o moc_myFormLayout.cpp
 
 moc_mainwindow.cpp: gitpp.h \
 		trace.h \
@@ -921,7 +921,7 @@ moc_mainwindow.cpp: gitpp.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qtabwidget.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qicon.h \
 		mainwindow.h
-	/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/bin/moc $(DEFINES) -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/mkspecs/linux-g++ -I'/home/cserv1_a/soc_ug/sc17sdc/Year2/User Interfaces/Final/ui_coursework_3' -I'/home/cserv1_a/soc_ug/sc17sdc/Year2/User Interfaces/Final/ui_coursework_3' -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore mainwindow.h -o moc_mainwindow.cpp
+	/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/bin/moc $(DEFINES) -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/mkspecs/linux-g++ -I/home/cserv1_a/soc_ug/sc17xc/Desktop/coursework3_gitlab -I/home/cserv1_a/soc_ug/sc17xc/Desktop/coursework3_gitlab -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore mainwindow.h -o moc_mainwindow.cpp
 
 compiler_moc_source_make_all: sc17xc.moc
 compiler_moc_source_clean:
@@ -1030,32 +1030,39 @@ sc17xc.moc: globals.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qtouchdevice.h \
 		gitpp.h \
 		trace.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QLabel \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlabel.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qframe.h \
+		window.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QMainWindow \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qmainwindow.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qtabwidget.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qicon.h \
+		sc17xc.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/QString \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QFormLayout \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qformlayout.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QLayout \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QVBoxLayout \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qboxlayout.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlayout.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qboxlayout.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qgridlayout.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QVBoxLayout \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QButtonGroup \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qbuttongroup.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QRadioButton \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qradiobutton.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qicon.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/QObject \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/QSignalMapper \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qsignalmapper.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QMessageBox \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qmessagebox.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qdialog.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QSplitter \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qsplitter.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qframe.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QLabel \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlabel.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QFormLayout \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qformlayout.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QLayout \
 		sc17xc.cc
-	/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/bin/moc $(DEFINES) -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/mkspecs/linux-g++ -I'/home/cserv1_a/soc_ug/sc17sdc/Year2/User Interfaces/Final/ui_coursework_3' -I'/home/cserv1_a/soc_ug/sc17sdc/Year2/User Interfaces/Final/ui_coursework_3' -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore sc17xc.cc -o sc17xc.moc
+	/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/bin/moc $(DEFINES) -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/mkspecs/linux-g++ -I/home/cserv1_a/soc_ug/sc17xc/Desktop/coursework3_gitlab -I/home/cserv1_a/soc_ug/sc17xc/Desktop/coursework3_gitlab -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui -I/home/csunix/linux/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore sc17xc.cc -o sc17xc.moc
 
 compiler_uic_make_all: ui_mainwindow.h
 compiler_uic_clean:
@@ -1403,6 +1410,8 @@ window.o: window.cc window.h \
 		globals.h \
 		dispatch.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QWidget \
+		gitpp.h \
+		trace.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QHBoxLayout \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qboxlayout.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlayout.h \
@@ -1533,6 +1542,8 @@ tabs.o: tabs.cc tabs.h \
 		globals.h \
 		dispatch.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QWidget \
+		gitpp.h \
+		trace.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QTabWidget \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qtabwidget.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qicon.h \
@@ -1804,30 +1815,37 @@ sc17xc.o: sc17xc.cc globals.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qtouchdevice.h \
 		gitpp.h \
 		trace.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QLabel \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlabel.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qframe.h \
+		window.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QMainWindow \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qmainwindow.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qtabwidget.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qicon.h \
+		sc17xc.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/QString \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QFormLayout \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qformlayout.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QLayout \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QVBoxLayout \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qboxlayout.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlayout.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qboxlayout.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qgridlayout.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QVBoxLayout \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QButtonGroup \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qbuttongroup.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QRadioButton \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qradiobutton.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qicon.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/QObject \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/QSignalMapper \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qsignalmapper.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QMessageBox \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qmessagebox.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qdialog.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QSplitter \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qsplitter.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qframe.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QLabel \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlabel.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QFormLayout \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qformlayout.h \
+		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QLayout \
 		sc17xc.moc
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sc17xc.o sc17xc.cc
 
@@ -1933,6 +1951,8 @@ el17dtt.o: el17dtt.cc globals.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qfiledevice.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qvector2d.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qtouchdevice.h \
+		gitpp.h \
+		trace.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QLabel \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlabel.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qframe.h \
@@ -1941,8 +1961,6 @@ el17dtt.o: el17dtt.cc globals.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlayout.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qlayoutitem.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qgridlayout.h \
-		gitpp.h \
-		trace.h \
 		window.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QMainWindow \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qmainwindow.h \
@@ -2084,6 +2102,8 @@ el17flc.o: el17flc.cc globals.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtCore/qfiledevice.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qvector2d.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtGui/qtouchdevice.h \
+		gitpp.h \
+		trace.h \
 		tabs.h \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/QDialog \
 		/home/cserv1_b/apps/install/qt/5.3.1/5.3/gcc_64/include/QtWidgets/qdialog.h \
