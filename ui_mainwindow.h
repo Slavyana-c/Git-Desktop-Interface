@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.3.1
+** Created by: Qt User Interface Compiler version 5.9.5
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -19,10 +19,8 @@
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLCDNumber>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QProgressBar>
-#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QToolBar>
@@ -41,8 +39,6 @@ public:
     QWidget *tab;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
-    QLineEdit *lineEdit;
-    QPushButton *pushButton_2;
     QFrame *line_2;
     QHBoxLayout *horizontalLayout_4;
     QWidget *widget;
@@ -93,16 +89,6 @@ public:
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setSpacing(6);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        lineEdit = new QLineEdit(tab);
-        lineEdit->setObjectName(QStringLiteral("lineEdit"));
-
-        horizontalLayout->addWidget(lineEdit);
-
-        pushButton_2 = new QPushButton(tab);
-        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-
-        horizontalLayout->addWidget(pushButton_2);
-
 
         verticalLayout->addLayout(horizontalLayout);
 
@@ -242,25 +228,24 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
-        pushButton_2->setText(QApplication::translate("MainWindow", "Search name", 0));
-        label->setText(QApplication::translate("MainWindow", "name:", 0));
-        label_3->setText(QApplication::translate("MainWindow", "number of commits:", 0));
-        label_2->setText(QApplication::translate("MainWindow", "e-mail:", 0));
-        label_4->setText(QApplication::translate("MainWindow", "Number of all commits: ", 0));
-        label_5->setText(QApplication::translate("MainWindow", "Number of contributors: ", 0));
-        label_6->setText(QApplication::translate("MainWindow", "Progress", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "Users", 0));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "name:", Q_NULLPTR));
+        label_3->setText(QApplication::translate("MainWindow", "number of commits:", Q_NULLPTR));
+        label_2->setText(QApplication::translate("MainWindow", "e-mail:", Q_NULLPTR));
+        label_4->setText(QApplication::translate("MainWindow", "Number of all commits: ", Q_NULLPTR));
+        label_5->setText(QApplication::translate("MainWindow", "Number of contributors: ", Q_NULLPTR));
+        label_6->setText(QApplication::translate("MainWindow", "Progress", Q_NULLPTR));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "Users", Q_NULLPTR));
         QTreeWidgetItem *___qtreewidgetitem = treeWidget->headerItem();
-        ___qtreewidgetitem->setText(0, QApplication::translate("MainWindow", "1", 0));
+        ___qtreewidgetitem->setText(0, QApplication::translate("MainWindow", "1", Q_NULLPTR));
 
         const bool __sortingEnabled = treeWidget->isSortingEnabled();
         treeWidget->setSortingEnabled(false);
         QTreeWidgetItem *___qtreewidgetitem1 = treeWidget->topLevelItem(0);
-        ___qtreewidgetitem1->setText(0, QApplication::translate("MainWindow", "Master", 0));
+        ___qtreewidgetitem1->setText(0, QApplication::translate("MainWindow", "Master", Q_NULLPTR));
         treeWidget->setSortingEnabled(__sortingEnabled);
 
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Branches", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Branches", Q_NULLPTR));
     } // retranslateUi
 
 };

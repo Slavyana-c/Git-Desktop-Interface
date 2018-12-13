@@ -5,6 +5,7 @@
 #include <iostream>
 #include <string.h>
 #include <QScrollArea>
+// #include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -80,6 +81,9 @@ MainWindow::MainWindow(QWidget *parent) :
   counter_for_position1++;
 }
   // ui->horizontalLayout_4->addWidget(scroll);
+
+  // // Search Show popup
+  // connect(saveButton, SIGNAL(clicked()), formLayout, SLOT(saveEdit()));
 }
 
 MainWindow::~MainWindow()

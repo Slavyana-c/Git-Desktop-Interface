@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 #include "gitpp.h"
 #include <QMainWindow>
+#include <QMessageBox>
 
 namespace Ui {
 class MainWindow;
@@ -18,6 +19,11 @@ public:
 private:
     Ui::MainWindow *ui;
     GITPP::REPO r;
+
+public slots:
+  void showPopup() {
+			QMessageBox::information(this,"Sccess!","Changes saved successfully.");
+  }
 };
 
 #endif // MAINWINDOW_H
